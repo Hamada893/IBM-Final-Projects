@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
 header {
@@ -34,6 +35,7 @@ a:hover {
 
 .branding {
   margin-left: 20px;
+  cursor: default;
 }
 
 i {
@@ -46,12 +48,17 @@ header p:not(.name){
   font-size: 0.7rem;
 }
 
-.about-me {
-  margin: 3em;
+.about-name {
+  margin-bottom: 0.7em;
+}
+
+.about-me:not(.about-name) {
+  margin-top: 6em;
   display: flex;
   justify-content: center;
   gap: 10em;
-  padding-bottom: 3em;
+  padding-bottom: 2.8em;
+  cursor: default;
 }
 
 .profile-pic {
@@ -72,4 +79,78 @@ header p:not(.name){
 
 .about-text-container {
   align-self: center;
+}
+
+.about-text {
+  color: #383838;
+  cursor: default;
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: false;
+}
+
+:root {
+  --bg-background: #111827;
+  --clr-card: #1f2937;
+  --clr-1: #6420aa;
+  --clr-2: #ff3ea5;
+  --clr-3: #ff7ed4;
+}
+
+.profile-pic-border {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 8px; /* thickness of the glowing border */
+  background: var(--clr-card);
+  z-index: 0;
+  width: 20%;
+  height: 35%;
+}
+
+.profile-pic-border::before,
+.profile-pic-border::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-card),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-1),
+    var(--clr-card)
+  );
+  animation: rotate 2.5s linear infinite;
+}
+
+.profile-pic-border::after {
+  filter: blur(24px);
+}
+
+@keyframes rotate {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+/* Adjust the image to fit inside the border */
+.profile-pic {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #000; 
+  position: relative;
+  z-index: 1;
 }
