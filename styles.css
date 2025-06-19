@@ -216,6 +216,35 @@ header p:not(.name){
   font-size: 1.8rem;
 }
 
+.projects-container {
+  padding-left: 15em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  cursor: default;
+  width: 80%;
+  color: #383838;
+}
+
+
+.project-description {
+  padding-left: 2em;
+  padding-bottom: 1em;
+}
+
+.bold-text {
+  font-weight: 900;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #818181;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Recommendations */
 .recommendations-title {
   padding-left: 8em;
