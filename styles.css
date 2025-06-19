@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #5327bb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+li, a {
+  color: #fff;
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a {
+  transition: transform 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.branding {
+  margin-left: 20px;
+}
+
+i {
+  margin-right: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+header p:not(.name){
+  font-size: 0.7rem;
+}
+
+.about-me {
+  margin: 3em;
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+  padding-bottom: 3em;
+}
+
+.profile-pic {
+  width: 20%;
+  height: 40%;
+  border-radius: 50%;
+  border: 5px solid #000000;
+  margin-right: 20px;
+}
+
+.about-me h1 {
+  font-size: 2rem;
+}
+
+.highlight {
+  color: #5327bb;
+}
+
+.about-text-container {
+  align-self: center;
+}
