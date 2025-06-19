@@ -25,7 +25,7 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about-me">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#recommendations">Recommendations</a></li>
@@ -38,7 +38,7 @@
         <img src="imgs/gon.jpg" alt="Profile Picture" class="profile-pic" />
       </div>
       <div class="about-text-container">
-        <h1 class="about-name"><span class="highlight">Hi, I'm Mohamed Sameh!</span> 👋</h1>
+        <h1 class="about-name"><span class="highlight">Hi, I'm Mohamed Sameh!</span> <span class="hand-wave">👋</span></span></h1>
         <p class="about-text">I'm a software engineer with a passion for 
           building web applications and mobile applications. <br>
            I aim to be a full stack developer by leveraging IBM's 
@@ -48,13 +48,66 @@
            and I'm looking forward to learning more!</p>
       </div>
     </section>
-    <section>
-      <h2>Projects</h2>
+    <section class="skills">
+      <h2 class="skills-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <dotlottie-player
+            src="https://lottie.host/0cb17bff-a519-4029-80d4-e353abd8ddf1/fvQEbNW9Hp.lottie"
+            background="transparent"
+            speed="1"
+            style="width: 150px; height: 150px"
+            loop
+            autoplay
+          ></dotlottie-player>
+          <p>HTML</p>
+          <p>5 months</p>
+        </div>
+        <div class="skill-card">
+          <dotlottie-player
+            src="https://lottie.host/9f3abf0d-763f-4a1e-8703-75fa4b517ff4/w2JZtLbbcN.lottie"
+            background="transparent"
+            speed="1.5"
+            style="width: 150px; height: 150px"
+            loop
+            autoplay
+        ></dotlottie-player>
+          <p>CSS</p>
+          <p>5 months</p>
+        </div>
+        <div class="skill-card">
+          <dotlottie-wc
+            src="https://lottie.host/f4b43a9b-f76c-4a13-85b6-d319e581d2f0/qbRHfvIBcA.lottie"
+            autoplay
+            loop
+            style="width: 150px; height: 150px"
+        ></dotlottie-wc>
+          <p>JavaScript</p>
+          <p>5 months</p>
+        </div>
+        <div class="skill-card">
+          <dotlottie-player 
+            src="https://lottie.host/a63d150a-ce14-4271-bdb0-a994522f29f3/Pcw57TSfei.lottie" background="transparent" speed="1" 
+            style="width: 150px; height: 150px" loop autoplay>
+        </dotlottie-player>
+          <p>React</p>
+          <p>2 months</p>
+        </div>
+      </div>
     </section>
-    <section>
-      <h2>Contact</h2>
+    <section class="projects">
+      <h2 class="projects-title">Projects</h2>
+    </section>
+
+    <section class="recommendations">
+      <h2 class="recommendations-title">Recommendations</h2>
     </section>
   </main>
+  <script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.3.0/dist/dotlottie-wc.js"
+  type="module"
+></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </body>
 </html>
 

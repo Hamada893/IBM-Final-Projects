@@ -4,6 +4,8 @@ body {
   font-weight: 600;
 }
 
+/* Header Section */
+
 header {
   background-color: #5327bb;
   display: flex;
@@ -20,7 +22,6 @@ li, a {
   display: inline-block;
   margin-right: 20px;
   font-size: 1rem;
-  font-weight: bold;
   cursor: pointer;
   text-decoration: none;
 }
@@ -31,6 +32,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  font-weight: 900;
 }
 
 .branding {
@@ -46,6 +48,22 @@ i {
 
 header p:not(.name){
   font-size: 0.7rem;
+}
+
+/* About Me Section */
+
+.hand-wave {
+  display: inline-block;
+  animation: upDown 2s ease-in-out infinite;
+}
+
+@keyframes upDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .about-name {
@@ -107,7 +125,7 @@ header p:not(.name){
   padding: 8px; /* thickness of the glowing border */
   background: var(--clr-card);
   z-index: 0;
-  width: 20%;
+  width: 18%;
   height: 35%;
 }
 
@@ -153,4 +171,55 @@ header p:not(.name){
   border: 5px solid #000; 
   position: relative;
   z-index: 1;
+}
+
+/* Skills Section */
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 3.5em;
+  padding: 2em;
+  cursor: default;
+}
+
+.skill-card {
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #fff;
+  width: 18em;
+  height: 16em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: scale(1.15);
+}
+
+.skills-title {
+  padding-left: 8em;
+  color: #5327bb;
+  cursor: default;
+  font-size: 1.8rem;
+}
+
+/* Projects */
+
+.projects-title {
+  padding-left: 8em;
+  color: #5327bb;
+  cursor: default;
+  font-size: 1.8rem;
+}
+
+/* Recommendations */
+.recommendations-title {
+  padding-left: 8em;
+  color: #5327bb;
+  cursor: default;
+  font-size: 1.8rem;
 }
