@@ -248,7 +248,30 @@ header p:not(.name){
 /* Recommendations */
 .recommendations-title {
   padding-left: 8em;
+  padding-top: 1em;
   color: #5327bb;
   cursor: default;
   font-size: 1.8rem;
+}
+
+.recommendations-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+  cursor: default;
+}
+
+.recommendation-card {
+  width: 27em;
+  border: 2px solid #c2c1c1 ;
+  border-radius: 1em;
+  padding: 1em;
+  background-color: #fff;
+  line-height: 1.3;
+}
+
+.quote {
+  color: #5327bb;
+  font-size: 1.5rem;
 }
