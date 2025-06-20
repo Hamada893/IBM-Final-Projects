@@ -292,6 +292,7 @@ header p:not(.name){
   cursor: default;
   color: #383838;
   width: 30em;
+  position: relative;
 }
 
 .leave-recommendation-title {
@@ -384,4 +385,18 @@ header p:not(.name){
 
 #close-popup:hover {
   background-color: #3e1a8e;
+}
+
+.scroll-to-home {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  margin-bottom: 0.2em;
+  font-size: 2.5rem;
+  color: #5327bb;
+  transition: color 0.3s;
+}
+
+.scroll-to-home:hover {
+  color: #3e1a8e;
 }
