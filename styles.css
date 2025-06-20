@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -293,6 +297,7 @@ header p:not(.name){
 .leave-recommendation-title {
   color: #1b1b1b;
   margin-left: 25em;
+  cursor: default;
 }
 
 .leave-recommendation form {
