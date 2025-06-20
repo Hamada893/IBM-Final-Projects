@@ -260,6 +260,7 @@ header p:not(.name){
   gap: 2em;
   padding: 2em;
   cursor: default;
+  margin-left: 4em;
 }
 
 .recommendation-card {
@@ -274,4 +275,63 @@ header p:not(.name){
 .quote {
   color: #5327bb;
   font-size: 1.5rem;
+}
+
+.leave-recommendation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 1em;
+  padding: 2em;
+  cursor: default;
+  color: #383838;
+  width: 30em;
+}
+
+.leave-recommendation-title {
+  color: #1b1b1b;
+  margin-left: 25em;
+}
+
+.leave-recommendation form {
+  display: flex;
+  flex-direction: column;
+  width: 60em;
+  gap: 0.5em;
+}
+
+.leave-recommendation input, .leave-recommendation textarea {
+  padding: 0.8em;
+  border-radius: 0.5em;
+  border: 2px solid #c2c1c1;
+  resize: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.leave-recommendation label {
+  margin-top: 0.5em;
+}
+
+.submit-button {
+  background-color: #5327bb;
+  color: white;
+  border: none;
+  padding: 0.8em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  width: 15em;
+}
+
+.submit-button:hover {
+  background-color: #3e1a8e;
+}
+
+#recommendation {
+  height: 10em;
 }
